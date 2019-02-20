@@ -160,3 +160,33 @@ p {
   font-size: 2rem;
   color: #5D6065;
 }
+.container .banner {
+  background: #DFE0E1;
+  margin-top: 50px;
+}
+.container .banner .banner-content {
+  padding: 30px 0 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.container .banner .banner-content img {
+  width: 35%;
+}
+.container .banner .banner-content h1 {
+  font-size: 3rem;
+  color: #5D6065;
+  margin-top: 20px;
+}
+.container .banner .banner-content h3 {
+  font-size: 2rem;
+  color: #5D6065;
+  margin: 20px 0;
+}
+.container .banner button {
+  margin: 0 0 50px 20px;
+  padding: 5px 30px;
+  border: 1px solid #5D6065;
+  border-radius: 3px;
+  background: #ACE4FC;
+}
