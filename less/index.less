@@ -143,8 +143,8 @@ p {
 		}
 
 		button:hover {
-				background: @hover-color;
-			}
+			background: @hover-color;
+		}
 	}
 
 	.main-content {
@@ -176,8 +176,8 @@ p {
 			width: 48%;
 
 			ul {
-				list-style: circle;
-				list-style-position: inside;
+				// list-style: circle;
+				// list-style-position: inside;
 				font-size: 1.6rem;
 				.my-font();
 
@@ -187,8 +187,15 @@ p {
 					// border-bottom: 1px solid gray;
 					.bordered();
 				}
+
+				li:last-child {
+					color: @hover-color;
+				}
 			}
 
+			a {
+				.my-font();
+			}
 		}
 	}
 
@@ -220,7 +227,6 @@ p {
 			margin-bottom: 10px;
 			font-weight: 600;
 		}
-
 	}
 
 	footer {
