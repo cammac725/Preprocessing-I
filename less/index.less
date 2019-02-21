@@ -48,12 +48,206 @@ table {
 	border-spacing: 0;
 }
 
+html {
+	box-sizing: border-box;
+	font-size: 62.5%;
+}
+
 /* Set every element's box-sizing to border-box */
-* {
-    box-sizing: border-box;
+*, *:before, *:after {
+    box-sizing: inherit;
 }
 
 html, body {
     height: 100%;
+}
+
+// Variables
+
+@font-color: #5D6065;
+@background-color: #DFE0E1;
+@hover-color: #2FBCF9;
+@font-family: 'Noto Sans', sans-serif;
+// @mobile: (max-width: 500px);
+.bordered() {
+	border-bottom: 1px solid @background-color;
+}
+.my-font() {
+	font-family: @font-family;
+	color: @font-color;
+}
+
+//  
+
+p {
+	line-height: 1.25;
+}
+
+.container {
+	max-width: 800px;
+	margin: 0 auto;
+
+	header {
+		display: flex;
+		justify-content: flex-end;
+
+		@media (max-width: 500px) {
+					justify-content: center;
+				}
+
+		nav {
+			margin-top: 35px;
+
+			a {
+				margin-right: 35px;
+				text-decoration: none;
+				font-size: 2rem;
+				font-family: @font-family;
+				color:@font-color;
+			}
+		}
+
+		
+	}
+
+	.banner {
+		background: @background-color;
+		margin-top: 50px;
+
+		.banner-content {
+			padding: 30px 0 0 20px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+
+			img {
+				width: 35%;
+			}
+
+			h1 {
+				font-size: 3rem;
+				font-family: @font-family;
+				color: @font-color;
+				margin-top: 20px;
+			}
+
+			h3 {
+				font-size: 2rem;
+				.my-font();
+				margin: 20px 0;
+			}
+		}
+		
+		button {
+			margin: 0 0 50px 20px;
+			padding: 5px 30px;
+			border: 1px solid @font-color;
+			font-family: @font-family;
+			border-radius: 3px;
+			background: #ACE4FC;
+			cursor: pointer;
+		}
+
+		button:hover {
+			background: @hover-color;
+		}
+	}
+
+	.main-content {
+		margin-top: 40px;
+		display: flex;
+		justify-content: space-between;
+
+		.test {
+			border: 1px solid black;
+		}
+
+		h2 {
+			font-size: 2rem; 
+			margin-bottom: 10px;
+			font-weight: 600;
+			.my-font();
+		}
+
+		.intro {
+			width: 48%;
+
+			p {
+				font-size: 1.6rem;
+				.my-font();
+			}
+		}
+
+		.skills {
+			width: 48%;
+
+			ul {
+				// list-style: circle;
+				// list-style-position: inside;
+				font-size: 1.6rem;
+				.my-font();
+
+				li {
+					// margin-bottom: 5px;
+					padding: 8px 0;
+					// border-bottom: 1px solid gray;
+					.bordered();
+				}
+
+				li:last-child {
+					color: @hover-color;
+				}
+			}
+
+			a {
+				.my-font();
+			}
+		}
+	}
+
+	.work-history {
+		width: 100%;
+		margin-top: 40px;
+		display: flex;
+		justify-content: center;
+
+		.work-content {
+			width: 80%;
+
+			ul {
+				list-style: none;
+				font-size: 1.6rem;
+				.my-font();
+
+				li {
+					padding: 8px 0;
+					.bordered();
+				}
+			}
+		}
+
+		h2 {
+			font-size: 2rem; 
+			color: @font-color;
+			font-family: @font-family;
+			margin-bottom: 10px;
+			font-weight: 600;
+		}
+	}
+
+	footer {
+		margin: 40px 0;
+		background: @background-color;
+
+		.footer-content {
+			padding: 20px 0;
+			text-align: center;
+		}
+
+		p {
+			font-size: 1.6rem;
+			.my-font();
+		}
+	}
 }
 

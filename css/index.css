@@ -1,1 +1,286 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+/* Set every element's box-sizing to border-box */
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+html,
+body {
+  height: 100%;
+}
+p {
+  line-height: 1.25;
+}
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.container header {
+  display: flex;
+  justify-content: flex-end;
+}
+@media (max-width: 500px) {
+  .container header {
+    justify-content: center;
+  }
+}
+.container header nav {
+  margin-top: 35px;
+}
+.container header nav a {
+  margin-right: 35px;
+  text-decoration: none;
+  font-size: 2rem;
+  font-family: 'Noto Sans', sans-serif;
+  color: #5D6065;
+}
+.container .banner {
+  background: #DFE0E1;
+  margin-top: 50px;
+}
+.container .banner .banner-content {
+  padding: 30px 0 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.container .banner .banner-content img {
+  width: 35%;
+}
+.container .banner .banner-content h1 {
+  font-size: 3rem;
+  font-family: 'Noto Sans', sans-serif;
+  color: #5D6065;
+  margin-top: 20px;
+}
+.container .banner .banner-content h3 {
+  font-size: 2rem;
+  font-family: 'Noto Sans', sans-serif;
+  color: #5D6065;
+  margin: 20px 0;
+}
+.container .banner button {
+  margin: 0 0 50px 20px;
+  padding: 5px 30px;
+  border: 1px solid #5D6065;
+  font-family: 'Noto Sans', sans-serif;
+  border-radius: 3px;
+  background: #ACE4FC;
+  cursor: pointer;
+}
+.container .banner button:hover {
+  background: #2FBCF9;
+}
+.container .main-content {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.container .main-content .test {
+  border: 1px solid black;
+}
+.container .main-content h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-family: 'Noto Sans', sans-serif;
+  color: #5D6065;
+}
+.container .main-content .intro {
+  width: 48%;
+}
+.container .main-content .intro p {
+  font-size: 1.6rem;
+  font-family: 'Noto Sans', sans-serif;
+  color: #5D6065;
+}
+.container .main-content .skills {
+  width: 48%;
+}
+.container .main-content .skills ul {
+  font-size: 1.6rem;
+  font-family: 'Noto Sans', sans-serif;
+  color: #5D6065;
+}
+.container .main-content .skills ul li {
+  padding: 8px 0;
+  border-bottom: 1px solid #DFE0E1;
+}
+.container .main-content .skills ul li:last-child {
+  color: #2FBCF9;
+}
+.container .main-content .skills a {
+  font-family: 'Noto Sans', sans-serif;
+  color: #5D6065;
+}
+.container .work-history {
+  width: 100%;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+.container .work-history .work-content {
+  width: 80%;
+}
+.container .work-history .work-content ul {
+  list-style: none;
+  font-size: 1.6rem;
+  font-family: 'Noto Sans', sans-serif;
+  color: #5D6065;
+}
+.container .work-history .work-content ul li {
+  padding: 8px 0;
+  border-bottom: 1px solid #DFE0E1;
+}
+.container .work-history h2 {
+  font-size: 2rem;
+  color: #5D6065;
+  font-family: 'Noto Sans', sans-serif;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.container footer {
+  margin: 40px 0;
+  background: #DFE0E1;
+}
+.container footer .footer-content {
+  padding: 20px 0;
+  text-align: center;
+}
+.container footer p {
+  font-size: 1.6rem;
+  font-family: 'Noto Sans', sans-serif;
+  color: #5D6065;
+}
